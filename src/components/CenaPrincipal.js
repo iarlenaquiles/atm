@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   StatusBar,
   View,
-  Image
+  Image,
+  StyleSheet
 } from 'react-native';
 
 import BarraNavegacao from './BarraNavegacao';
@@ -19,19 +20,43 @@ export default class CenaPrincipal extends Component {
 	<View>
         <StatusBar backgroundColor='#CCC' />
         <BarraNavegacao /> 
+        <View style={styles.logo}>
+          <Image source={logo} />
+        </View>
 
-        <Image source={logo} />
+        <View style={styles.menu}>
+            <View style={styles.menuGrupo}>
+              <Image style={styles.imgMenu} source={menuCliente} />
 
-        <Image source={menuCliente} />
+              <Image style={styles.imgMenu} source={menuContato} />
+            </View>
 
-        <Image source={menuContato} />
+            <View style={styles.menuGrupo}>
+              <Image style={styles.imgMenu} source={menuEmpresa} />
 
-        <Image source={menuEmpresa} />
+              <Image style={styles.imgMenu} source={menuServico} />
+            </View>
 
-        <Image source={menuServico} />
+        </View>
 
         
      </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+	logo: {
+		marginTop: 30,
+		alignItems: 'center'
+	},
+	menu: {
+		alignItems: 'center'
+	},
+	menuGrupo: {
+		flexDirection: 'row'
+	},
+	imgMenu: {
+		margin: 15
+	}
+});
