@@ -7,8 +7,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-
-
 import BarraNavegacao from './BarraNavegacao';
 
 const detalheCliente = require('../imgs/detalhe_cliente.png');
