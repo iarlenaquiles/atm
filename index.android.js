@@ -10,9 +10,15 @@ export default class atm extends Component {
   render() {
     return (
       <Navigator 
-       initialRoute={}
+       initialRoute={{ id: 'a' }}
        renderScene={(route, navigator) => {
+          if (route.id === 'a') {
+            return (<CenaPrincipal />);
+          }
 
+          if (route.id === 'b') {
+            return (<CenaClientes />);
+          }
        }}
       />
     );
