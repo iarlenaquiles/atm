@@ -2,11 +2,23 @@ import React, { Component } from 'react';
 import {
   Text,
   StyleSheet,
-  View
+  View,
+  Image
 } from 'react-native';
+
+const imgVoltar = require('../imgs/btn_voltar.png');
 
 export default class BarraNavegacao extends Component {
   render() {
+    if (this.props.voltar) {
+     return (
+      <View style={styles.BarraTitulo}>
+       <Image source={imgVoltar} />
+       <Text style={styles.titulo}>ATM Consultoria</Text>
+      </View>
+     );
+    }
+
     return (
 	<View style={styles.BarraTitulo}>
       <Text style={styles.titulo}>ATM Consultoria</Text>
