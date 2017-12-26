@@ -13,7 +13,7 @@ export default class atm extends Component {
        initialRoute={{ id: 'a' }}
        renderScene={(route, navigator) => {
           if (route.id === 'a') {
-            return (<CenaPrincipal />);
+            return (<CenaPrincipal navigator={navigator} />);
           }
 
           if (route.id === 'b') {
