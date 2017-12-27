@@ -15,24 +15,13 @@ export default class atm extends Component {
       <Navigator 
        initialRoute={{ id: 'principal' }}
        renderScene={(route, navigator) => {
-          if (route.id === 'principal') {
-            return (<CenaPrincipal navigator={navigator} />);
-          }
-
-          if (route.id === 'clientes') {
-            return (<CenaClientes navigator={navigator} />);
-          }
-
-          if (route.id === 'contatos') {
-            return (<CenaContato navigator={navigator} />);
-          }
-
-          if (route.id === 'empresa') {
-            return (<CenaEmpresa navigator={navigator} />);
-          }
-
-          if (route.id === 'servico') {
-            return (<CenaServico navigator={navigator} />);
+          switch (route.id) {
+            case 'principal': return (<CenaPrincipal navigator={navigator} />);
+            case 'clientes': return (<CenaClientes navigator={navigator} />);
+            case 'contatos': return (<CenaContato navigator={navigator} />);
+            case 'empresa': return (<CenaEmpresa navigator={navigator} />);
+            case 'servico': return (<CenaServico navigator={navigator} />);
+            default: return false;
           }
        }}
       />
