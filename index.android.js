@@ -17,7 +17,7 @@ export default class atm extends Component {
             return (<CenaPrincipal navigator={navigator} />);
           }
 
-          if (route.id === 'b') {
+          if (route.id === 'clientes') {
             return (<CenaClientes navigator={navigator} />);
           }
 
