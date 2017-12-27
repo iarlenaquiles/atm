@@ -16,7 +16,7 @@ export default class CenaContato extends Component {
     return (
 	<View style={{ flex: 1, backgroundColor: '#FFF' }}>
         <StatusBar backgroundColor='#61BD8C' />
-        <BarraNavegacao voltar navigator={this.props.navigator} />  
+        <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#61BD8C' />  
 
         <View style={styles.cabecalho}>
           <Image source={imgContato} />
