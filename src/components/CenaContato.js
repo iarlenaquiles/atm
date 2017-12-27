@@ -6,6 +6,8 @@ import {
 
 import BarraNavegacao from './BarraNavegacao';
 
+const imgContato = require('../imgs/detalhe_contato.png');
+
 export default class CenaContato extends Component {
   render() {
     return (
