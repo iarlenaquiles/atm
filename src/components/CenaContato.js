@@ -22,6 +22,12 @@ export default class CenaContato extends Component {
           <Image source={imgContato} />
           <Text style={styles.txtTitulo}>Contatos</Text>
         </View>       
+
+        <View style={styles.detalheContatos}>
+         <Text style={styles.txtDetalheContato}>TEL: (85) 9 9876-9848</Text>
+         <Text style={styles.txtDetalheContato}>CEL: (85) 9 9876-9848</Text>
+         <Text style={styles.txtDetalheContato}>E-MAIL: iarlensilva@gmail.com</Text>
+        </View>
      </View>
     );
   }
@@ -38,12 +44,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 25
   },
-  detalheCliente: {
+  detalheContatos: {
     padding: 20,
-    marginTop: 10
+    marginTop: 20
   },
-  txtDetalheCliente: {
-    fontSize: 18,
-    marginLeft: 20
+  txtDetalheContato: {
+    fontSize: 18
   }
 });
