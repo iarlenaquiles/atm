@@ -11,7 +11,7 @@ import BarraNavegacao from './BarraNavegacao';
 
 const imgEmpresa = require('../imgs/detalhe_empresa.png');
 
-export default class CenaContato extends Component {
+export default class CenaEmpresa extends Component {
   render() {
     return (
 	<View>
