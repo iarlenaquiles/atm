@@ -24,7 +24,9 @@ export default class CenaEmpresa extends Component {
         </View>       
 
         <View style={styles.detalheEmpresa}>
-         <Text style={styles.txtDetalheEmpresa}>Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom</Text>
+         <Text style={styles.txtDetalheEmpresa}>
+           Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom Lorem ipsom
+         </Text>
         </View>
      </View>
     );
