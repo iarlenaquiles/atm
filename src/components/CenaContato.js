@@ -14,7 +14,7 @@ const imgContato = require('../imgs/detalhe_contato.png');
 export default class CenaContato extends Component {
   render() {
     return (
-	<View>
+	<View style={{ flex: 1, backgroundColor: '#FFF' }}>
         <StatusBar backgroundColor='#61BD8C' />
         <BarraNavegacao voltar navigator={this.props.navigator} />  
 
